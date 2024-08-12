@@ -1,0 +1,26 @@
+table{
+    border-collapse: collapse;
+}
+td{
+    padding: 20px;
+    width: 100px;
+}
+th{
+    background-color: rgb(100, 36, 251);
+    color: aliceblue;
+    padding: 20px;
+    text-transform: capitalize;
+}
+td:nth-child(odd){
+    background-color: rgb(233, 238, 244);
+}
+button{
+    background-color: rgb(100, 36, 251);
+    color: white;
+    border: none;
+    padding: 10px;
+}
+#i1{
+    background-color: rgb(234, 234, 248);
+    font-weight: bold;
+}

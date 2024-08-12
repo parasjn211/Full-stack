@@ -1,0 +1,17 @@
+table{
+    border-collapse: collapse;
+}
+th{
+    background-color: green;
+    color: aliceblue;
+    padding: 10px;
+    text-transform: capitalize;
+}
+tr:nth-child(even){
+    color: greenyellow;
+    background-color: grey;
+}
+td{
+    padding: 10px;
+    text-transform: capitalize;
+}

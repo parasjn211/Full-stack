@@ -1,0 +1,31 @@
+table{
+    border-collapse: collapse;
+}
+thead td{
+    text-transform: uppercase;
+}
+td{
+    padding: 10px;
+    text-transform: capitalize;
+}
+#I1{
+    font-weight: bold;
+}
+TBODY TR:nth-child(ODD){
+    background-color: rgb(227, 224, 224);
+}
+.opn{
+    background-color: yellow;
+    color: black;
+}
+.prgrs{
+    background-color: green;
+}
+.onhld{
+    
+    background-color: red;
+}
+button{
+    color: white;
+    border: none;
+}

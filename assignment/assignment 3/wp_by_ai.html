@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(images/office\ meeting.jpg);
+            font-family: sans-serif;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container{
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 30px;
+            width: 400px;
+        }
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"]{
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="checkbox"]{
+            margin-right: 5px;
+        }
+        button{
+            background-color: #4caf50;
+            color: white;
+            padding: 12px 20px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: poiter;
+            width: 100%;
+        }
+        button:hover{
+            background-color: #45a049;
+        }
+        .terms{
+            margin-top: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .terms a{
+            color: #4caf50;
+            text-decoration: none;
+        }
+        .login-link{
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        .login-link a{
+            color: #4caf50;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>CREATE ACCOUNT</h2>
+        <form action="">
+            <input type="text" placeholder="name" required>
+            <input type="email" placeholder="your email" required>
+            <input type="password" placeholder="password" required>
+            <input type="password" placeholder="confirm password" required>
+            <div class="terms">
+                <input type="checkbox" required>
+                <label for="terms">I agree all statements in <a href="#">Terms of service</a></label>
+            </div>
+            <button type="submit">SGN UP</button>
+        </form>
+        <div class="login-link">
+            Already have account? <a href="#">login here</a>
+        </div>
+    </div>
+</body>
+</html>

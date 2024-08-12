@@ -1,0 +1,17 @@
+body{
+    background-image: url(images/office\ meeting.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    color: black;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}
+.form-container{
+   position: absolute;
+   color: white;
+}
+div{
+    background-color: white;
+}
