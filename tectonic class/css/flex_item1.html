@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .container{
+            display: flex;
+            width: 400px;
+            border: 2px solid red;
+        }
+        .item{
+            background-color: yellow;
+            color: red;
+            padding: 20px;
+            border: 2px solid red;
+        }   
+        .a{
+            flex-shrink: 2;
+            /* width: 200px; */
+            flex-basis: 100px;
+        }
+        .b{
+            flex-shrink: 2;
+            /* width: 100px; */
+            flex-basis: 100px;
+        }
+        .c{
+            flex-shrink: 2;
+            /* width: 200px; */
+            flex-basis: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item a">a</div>
+        <div class="item b">b</div>
+        <div class="item c">c</div>
+    </div>
+</body>
+</html>

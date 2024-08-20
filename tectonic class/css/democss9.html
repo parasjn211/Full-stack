@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        thead{
+            background-color: black;
+            color: white;
+            text-transform: uppercase;
+        }
+        #i1{
+            background-color: gold;
+            font-weight: bold;
+        }
+        tbody th{
+            background-color: blue;
+            text-transform: capitalize;
+            color: white;
+        }
+        tr:nth-child(even){
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>2019 Fourth Quarter Report</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th>october</th>
+                <th>november</th>
+                <th>december</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>projected</th>
+                <td>$841,640</td>
+                <td>$732,270</td>
+                <td>$841,640</td>
+            </tr>
+            <tr>
+                <th>actual</th>
+                <td>$841,640</td>
+                <td>$732,270</td>
+                <td>$841,640</td>
+            </tr>
+            <tr>
+                <th>utilization</th>
+                <td>83%</td>
+                <td id="i1">90%</td>
+                <td>75%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

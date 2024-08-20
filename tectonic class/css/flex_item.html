@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container{
+            display: flex;
+            width: 800px;
+            border: 2px  solid red;
+        }
+        .item{
+            background-color: yellow;
+            width: 100px;
+            border: 2px solid black;
+            /* margin: 10px; */
+            padding: 25px;
+        }
+        .a{
+            flex-grow: 1;
+        }
+        .b{
+            flex-grow: 4;
+        }
+        .c{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container">
+            <div class="item a">a</div>
+            <div class="item b">b</div>
+            <div class="item c">c</div>
+        </div>
+    
+    </div>
+</body>
+</html>

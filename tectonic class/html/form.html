@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script>
+        function show(){
+            let ob = document.getElementById("t1")
+            let fname = ob.value
+            alert(fname)        }
+    </script>
+</head>
+<body>
+    <input type="text" name="n1" id="t1" placeholder="Enter text"><br>
+    <input type="number" name="n2" id="t2" placeholder="enter number"><br>
+    <textarea name="" id="" placeholder="This is textarea"></textarea><br>
+    <input type="button" value="click Here" onclick="show()">
+    <hr>
+    <!-- checkbox and radio button -->
+     <label for="">HTML</label>
+    <input type="checkbox" name="n1" id="c1" checked>
+    <label for="">CSS</label>
+    <input type="checkbox" name="n2" id="c2">
+    <label for="Java Script"></label>
+    <input type="checkbox" name="n3" id="c3">
+    <hr>
+    <!-- Radio button -->
+     <label for="">Male</label>
+     <input type="radio" name="Gender" id="r1">
+     <label for="">Femal</label>
+     <input type="radio" name="Gender" id="r2">
+</body>
+</html>

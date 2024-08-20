@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-content property</title>
+    <style>
+        .container{
+            padding: 0;
+            margin: 0;
+            border: 2px solid  red;
+            display: flex;
+            width: 700px;
+            height: 300px;
+            /* justify-content: center; */
+            /* justify-content: start; */
+            /* justify-content: end; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            justify-content: space-evenly;
+            /* appearing item at center */
+            /* justify-content: center; */
+            /* align-items: center; */
+
+        }
+        .item{
+            background-color: red;
+            padding: 5px;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 2em;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+</body>
+</html>
