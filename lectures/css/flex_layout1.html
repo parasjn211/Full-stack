@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: lightgrey;
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            border: 2px solid black;
+            height: 100vh;
+            width: 100vw;
+        }
+        .item{
+            border: 2px solid black;
+            margin: 10px;
+            
+        }
+        .a{
+            background: green ;
+            height: 20%;
+            width: 100%;
+        }
+        .b{
+            background: white ;
+            height: 60%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+        .c{
+            background: green ;
+            height: 20%;
+            width: 100%;
+        }
+        .d{
+            height: 100%;
+            width: 60%;
+            background-color: bisque;
+        }
+        h1{
+            align-content:  center;
+        }
+        .e{
+            height: 100%;
+            width: 20%;
+            background-color: purple;
+            
+        }
+        .f{
+            height: 100%;
+            width: 20%;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item a">
+            <h1>This is heading</h1>
+        </div>
+        <div class="item b">
+            <div class="d">
+                <p>        
+                    This is content 1
+                </p>
+            </div>
+            <div class="e">
+                <p>
+                    This is content 2
+                </p>
+            </div>
+            <div class="f">
+                <p>
+                    This is content 3
+                </p>
+            </div>
+        </div>
+        <div class="item c">
+            <p>This is footer</p>
+        </div>
+    </div>
+</body>
+</html>
