@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+            width: 80%;
+            
+        }
+        h3{
+            color: red;
+            text-align: center;
+            font-size: xx-large;
+        }
+        .item{
+            background-color: aqua;
+            display: flex;
+            flex-direction: row;
+            border: 2px solid black;
+            margin: 20px;
+            width: 30%;
+        }
+        .item2{
+            background-color: aqua;
+            display: flex;
+            flex-direction: row-reverse;
+            border: 2px solid black;
+            margin: 20px;
+            justify-content: end;
+            width: 30%;
+        }
+        .item3{
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+            margin: 20px;
+            justify-content: end;
+            width: 20%;
+        }
+        .item4{
+            background-color: aqua;
+            display: flex;
+            flex-direction: column-reverse;
+            border: 2px solid black;
+            margin: 20px;
+            justify-content: end;
+            width: 20%;
+            
+        }
+        .inner1{
+            background-color: red;
+            height: 100%;
+            justify-content: start;
+            border: 2px solid black;
+            border-radius: 3px;
+            padding: 30px;
+            color: white;
+        }
+        .inner2{
+            background-color: red;
+            height: 100%;
+            border: 2px solid black;
+            border-radius: 3px;
+            padding: 30px;
+            color: white;
+        }
+        .inner3{
+            background-color: red;
+            height: 100%;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 30px;
+            color: white;
+        }
+        .inner4{
+            background-color: red;
+            height: 100%;
+            border: 2px solid black;
+            padding: 30px;
+            border-radius: 5px;
+            color: white;
+        }
+        h5{
+            margin-left: 20px;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Flex demo for flex-direction proper-reverseties</h3>
+        <h5>flex-direction:- row property</h5>
+        <div class="item">
+            <div class="inner1">1</div>
+            <div class="inner1">2</div>
+            <div class="inner1">3</div>
+        </div>
+        <h5>flex-direction:- row-reverse property</h5>
+        <div class="item item2">
+            <div class="inner2">1</div>
+            <div class="inner2">2</div>
+            <div class="inner2">3</div>
+        </div>
+        <h5>flex-direction:- column property</h5>
+        <div class="item item3">
+            <div class="inner3">1</div>
+            <div class="inner3">2</div>
+            <div class="inner3">3</div>
+        </div>
+        <h5>flex-direction:- column property</h5>
+        <div class="item item4">
+            <div class="inner4">1</div>
+            <div class="inner4">2</div>
+            <div class="inner4">3</div>
+        </div>
+        
+    </div>
+</body>
+</html>
