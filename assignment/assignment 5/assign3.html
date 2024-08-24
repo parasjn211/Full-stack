@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            background-color: lightgray;
+            padding: 20px;
+            height: 60vh;
+        }
+        .item{
+            display: flex;
+            flex-direction: row;
+            padding: 15px;
+        }
+        input{
+            flex-grow: 1;
+        }
+        button{
+         width: 60px;   
+         align-self: end;
+         background-color: rgb(154, 151, 151);
+         color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <p>Name :</p>
+            <input type="text">
+        </div>
+        <div class="item">
+            <p>Town you were born in :</p>
+            <input type="text">
+        </div>
+        <div class="item">
+            <p>Email Addrress :</p>
+            <input type="text">
+        </div>
+        <button type="submit">Submit</button>
+    </div>
+</body>
+</html>

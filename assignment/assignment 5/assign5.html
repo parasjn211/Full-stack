@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            display: flex;
+            background-color: bisque;
+            border: 2px solid black;
+            /* height: 80vh; */
+            padding: 10px;
+        }
+        .item1{
+            padding-top: 50px;
+            /* border: 2px solid black; */
+        }
+        textarea{
+            height: 65%;
+        }
+        .item2{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            margin: 30px;
+            /* border: 2px solid black; */
+            flex-grow: 1;
+        }
+        input{
+
+            
+        }
+        button{
+            width: 100px;
+            margin-top: 20px;
+            background-color: green;
+        }
+        button:hover{
+            background-color: rgb(130, 195, 130);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">
+            <p>Message</p>
+            <textarea name="" id=""></textarea>
+        </div>
+        <div class="item2">
+            <p>Name</p>
+            <input type="text">
+            <p>City you were born</p>
+            <input type="text">
+            <p>Email address</p>
+            <input type="text">
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+</body>
+</html>
