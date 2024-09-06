@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive design</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 15% 40% 40% 15%;
+            grid-template-rows: 20% 10% 50% 20%;
+            background-color: bisque;
+            border: 2px solid black;
+            /* grid-gap: 5px; */
+            width: 100vw;
+            height: 100vh;
+        }
+        .item{
+            background-color: gold;
+            padding: 20px;
+            font-family: serif;
+            border: 2px solid black;
+        }
+        .header{
+            grid-column: 1/span 4;
+            grid-row: 1;
+        }
+        .nav{
+            grid-row: 2;
+            grid-column: 1/span 4;
+            display: flex;
+            flex-direction: column;
+         
+            
+        }
+        .l-s-c{
+            grid-row: 3;
+            grid-column: 1;
+        }
+        .m-c{
+            grid-row: 3;
+            grid-column: 2/span 2;
+        }
+        .footer{
+            grid-row: 4;
+            grid-column: 1/ span 4;
+        }
+       .nav-r{
+        justify-content: end;
+        display: flex;
+        flex-direction: row;
+       }
+       ul{
+        display: flex;
+        flex-direction: row;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item header">
+            <div>
+                header
+            </div>
+        </div>
+        <div class="item nav">
+            <div>
+                <ul>
+                    <li>Home</li>
+                    <li>about</li>
+                    <li>services</li>
+                </ul>
+                <div class="nav-r">
+                    <input type="search" name="" id="" placeholder="search">
+                    <button>Go</button>
+                </div>
+            </div>
+        </div>
+        <div class="item l-s-c">
+            <div>
+               side-content
+            </div>
+        </div>
+        <div class="item m-c">
+            <div>
+               main-content
+            </div>
+        </div>
+        <div class="item r-s-c">
+            <div>
+               right side content
+            </div>
+        </div>
+        <div class="item footer">
+            <div>
+               footer
+            </div>
+        </div>
+    </div>
+</body>
+</html>
