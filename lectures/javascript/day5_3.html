@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function show(){
+            let ob1 = document.getElementById("t1")
+            let fname = ob1.value
+            let ob2 = document.getElementById("d1")
+            ob2.style.width="100px"
+            ob2.style.height="100px"
+            ob2.style.backgroundColor="gray"
+            ob2.style.border="2px solid black"
+            ob2.style.padding="20px"
+            ob2.innerText="Hello "+fname
+        }
+    </script>
+</head>
+<body>
+    <input type="text" name="" id="t1" value="abc">
+    <br>
+    <input type="button" name="" value="click here" id="" onclick="show()">
+    <div id="d1">
+        
+    </div>
+</body>
+</html>
