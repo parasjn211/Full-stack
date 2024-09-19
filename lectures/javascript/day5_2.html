@@ -5,17 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function show(){
-            let ob1 = document.getElementById("t1")
-            let fname = ob1.value
-            alert("Hello "+fname)
-            //let ob2=document.getElementById("d1")
+        function create(){
+            let ob1=document.getElementById("t1")
+            ob1.border="1"
+            let r1=document.createElement("tr")
+            let c1=document.createElement("td")
+            c1.innerText="100"
+            let c2=document.createElement("td")
+            c2.innerText="ABC"
+            //Inserting elements in the row
+            r1.append(c1)
+            r1.append(c2)
+            //Inserting row in table
+            ob1.append(r1)
         }
     </script>
 </head>
 <body>
-    <input type="text" name="" id="t1" value="abc">
-    <br>
-    <input type="button" name="" id="" onclick="show()" value="click here">
+    <h2>This is a sample table created using javascript</h2>
+    <table id="t1"></table>
+    <input type="button" value="click here" onclick="create()">
 </body>
 </html>

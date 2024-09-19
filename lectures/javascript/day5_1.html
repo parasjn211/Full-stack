@@ -5,29 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function show(){
-            let fname= prompt("Enter your name :", "ABC")
-            alert("Hello "+fname)
+        function create(){
+            //create tag
+            let ob1=document.createElement("input")
+            document.body.append(ob1)
+            let ob2= document.createElement("input")
+            ob2.type="button"
+            ob2.value="Ok"
+            let ob3=document.getElementById("d1")
+            ob3.append(ob2)
         }
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
     </script>
 </head>
 <body>
-    <input type="button" value="click here" onclick="show()" name="" id="">
+    <h1>In this webpage some tags of html like, input, button are created using javascript</h1>
+    <input type="button" name="" id="" value="Clich here" onclick="create()">
+    <br>
+    <div id="d1" style="background-color: red; width: 100px;">
+
+    </div>
 </body>
 </html>

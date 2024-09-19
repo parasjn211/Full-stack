@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function table() {
+            let ob1 = document.getElementById("t1")
+            let n = Number(ob1.value)
+            let s1 = " "
+            for (let i = 1; i <= 10; i++) {
+                let x = n * i
+                s1 = s1 + x + "\n"
+            }
+            let ob2 = document.getElementById("d1")
+            ob2.innerText = s1
+        }
+
+        // Here s1 is string data type so like other languages the x+"\n" will not get added but it will be like
+        // s1="4"+"\n"+"8"+"\n"+"12"+"\n"+.....+"40"+"\n"
+    </script>
+</head>
+
+<body>
+    <input type="text" name="" id="t1">
+    <input type="button" name="" id="" value="click here" onclick="table()">
+    <br><br>
+    <div id="d1">
+
+    </div>
+</body>
+
+</html>
