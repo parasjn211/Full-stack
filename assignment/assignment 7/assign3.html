@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function table(){
+        
+            let t = document.createElement("table")
+            let r = document.createElement("thead")
+            let h1 = document.createElement("th")
+            let h2 = document.createElement("th")
+            let h3 = document.createElement("th")
+            let r1 = document.createElement("tr")
+            let r2 = document.createElement("tr")
+            let c11 = document.createElement("td")
+            let c12 = document.createElement("td")
+            let c13 = document.createElement("td")
+            let c21 = document.createElement("td")
+            let c22 = document.createElement("td")
+            let c23 = document.createElement("td")
+            h1.innerText="Heading 1"
+            h2.innerText="Heading 2"
+            h3.innerText="Heading 3"
+            c11.innerText="Column 1 of row 1"
+            c12.innerText="Column 2 of row 1"
+            c13.innerText="Coulumn 3 of row 1"
+            c21.innerText="Column 1 of row 2"
+            c22.innerText="Column 2 of row 2"
+            c23.innerText="Coulumn 3 of row 2"
+            r.append(h1)
+            r.append(h2)
+            r.append(h3)
+            r1.append(c11)
+            r1.append(c12)
+            r1.append(c13)
+            r2.append(c21)
+            r2.append(c22)
+            r2.append(c23)
+            t.append(r)
+            t.append(r1)
+            t.append(r2)
+            document.body.append(t)
+            t.border="1"
+        }
+    </script>
+</head>
+<body>
+<button onclick="table()">Click to see table</button>
+</body>
+</html>

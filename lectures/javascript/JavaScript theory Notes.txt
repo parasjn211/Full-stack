@@ -1,0 +1,138 @@
+JavaScript Notes after the Notebook is over:-
+
+
+Date:- 20/09/2024
+Day:- Friday
+
+
+
+Data types of javascript
+
+
+1.String
+
+String is a group of characters
+In js we can create string by 3 ways
+a. by single quote : '_'
+b. by double qotes "_"
+c. by backticks `_`
+ The advantage of the backticks ` is that we can create string interpolation
+Example:
+s1='Hello'
+let fname = "abc"
+s2="Hello ${fname}"
+s3=`Hello ${fname}`
+
+*)Accessing string element:
+
+We can access string element by indexing 
+JavaScript support positive indexing and negative indexing
+
+1   2  3  4  5
+-   -  -  -  - 
+|            |
+-   -  -  -  -
+-5 -4 -3 -2 -1
+
+We can access string by two ways:
+1. by subscript that is '[]' 
+2.and by 'at()' function
+
+Subscript and at function are same, but using at() function we can access element by negative indexing. We cannot use negative indexing with subscript.
+
+Example: 
+
+let s1=`Hello`
+//length of string
+let n=
+s1.length
+console.log(n)
+//accessing string elements by index
+console.log(s1[0])
+console.log(s1[2])
+console.log(s1[3])
+console.log(s1[-1]) //it will print undefined as negative indexing is not supported in subscript
+console.log("***************************************************")
+
+//accessing string element by at() function
+
+console.log(s1[0])
+console.log(s1[2])
+console.log(s1[3])
+console.log(s1[-1])
+
+
+string objects are immutable that is which cannot be changed.
+
+*)String methods
+1.toLpperCase(): converts string to uppercase and 
+2.toLowerCase(): converts
+3.indexOf(): it is used to find the index of substring. if multiple substring are there, then it will return index of the first substring
+4.lastIndexOf(): gets the index of last substring
+
+Example:
+let s1= `Hello World`
+console.log(s1)
+s1=s1.toUpperCase()
+console.log(s1)
+s1=s1.toLowerCase()
+console.log(s1)
+/********************************************/
+let s1=`Hello World`
+x=s1.indexOf(`l`)
+console.log(`x)
+x=s1.indexOf(`l`)
+console.log(`x)
+x=s1.indexOf(`xyz`)
+console.log(`x)
+x=s1.indexOf(`Wo`)
+console.log(`x)
+/*******************************************/
+let s1=`Helol World`
+let x=-1
+do{
+	x=s1.indexOf(`1`, x+1)
+	console.log(x)
+  }wile(x!=-1);
+
+5.split() function: It is used to divide string object into substring. We can split the string by given separater character
+Example: 
+let s1=`this is demo string`
+let arr=s1.split(" ")
+console.log(arr)
+/******************************************/
+s1="100,xyz,abc"
+arr=s1.split(",")
+console.log(arr)
+arr.forEach((p)=>console.log(p))
+
+6.substring():
+
+let s1="Hello World"
+let s2=s1.substring(1,7)
+console.log(s2)
+s2=s1.subscript
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
