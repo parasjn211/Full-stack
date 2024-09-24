@@ -114,10 +114,51 @@ console.log(s2)
 s2=s1.subscript
 
 
+7.slice():
 
 
+Difference between slice  and substring
+slice(): 
+1. slice method support negative indexing.
+2.In substring start index is greater than stop index, then javascript automatically reverses it.
+substring()
+1.Sub  doesn't support negative indexing.
+2.In slice start index cannot be greater than stop/in index
 
+8.startsWith
+let s1="Hello World"
+console.log("s1.startsWith("H"))
+console.log("s1.startsWith("Hel"))
+console.log("s1.startsWith("ello"))
 
+9.endsWith
+
+console.log("s1.startsWith("d"))
+console.log("s1.startsWith("ldd"))
+console.log("s1.startsWith("worl"))
+
+10.include
+console.log("s1.startsWith("xyz"))
+console.log("s1.startsWith("ello"))
+
+11.replace
+let s2="This is Demo string"
+console.log(s2)
+let s3=s2.replace("is", "IS")
+console.log(s3) 
+
+12.Array
+Array is a group of elements 
+In js we can group same type of element or different type of element
+We can create array by two ways
+
+declaration
+
+Method - 1
+let arr=[10,20,30]
+
+Method - 2
+let arr2 = new Array(10,20,30)
 
 
 
