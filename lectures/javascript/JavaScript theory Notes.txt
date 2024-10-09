@@ -1,6 +1,6 @@
 JavaScript Notes after the Notebook is over:-
 
-
+started from:
 Date:- 20/09/2024
 Day:- Friday
 
@@ -177,3 +177,235 @@ let arr2 = new Array(10,20,30)
 
 
 
+
+
+
+
+set:
+It is a collection of unique values. Duplicate values are not allowed.
+
+Methods:
+
+1.add(): adds value to the set
+2.delete(): removes value from the set
+3.has(): checks that specified value present in the set object or not
+4.clear(): deletes all elements from the set
+5.size: gets the size of set object. It is an attribute.
+
+
+
+
+Take notes from shahane 
+and paste it
+
+
+copy the content send from karan nakhate's what's app and paste it here
+
+
+now continue
+
+What is class in js
+Actually class is a function in JS.
+1. When code executed js create a new function with class name
+2. All the code of constructor goes inside function directly
+3. All the functions present inside class goes inside prototype attribute
+
+eg:
+class test{
+sayhello(){
+con.lo(`hello ${this.firstname}`)
+}
+show(){
+c.l(in show)
+}
+constructor(fname, lname){
+this.firstname=fname
+this.lastname=lname
+c.l(c called)
+}
+}
+c.l(typeof(test))
+c.l(test.prototype.show)
+c.l(test.prototype.sayhello)
+
+in js we can store complete class inside a variable. This is called class as a expression
+we use class as a expression to pass class as a parameter to the function
+
+function display(myclass2){
+let ob=new myclass2()
+ob.sayHello()
+}
+let x=class{
+constructor(){
+c.l(constructor called)
+}
+sayHello(){
+c.l(Hello world)
+}
+}
+display(x)
+
+encapsulation : Encapsulation means hide data from outside of the class. We can create encapsulation by three steps: 
+1. Declare all variables as private (We use # symbol in js to declare private variable)
+2. Write setter method to set value (We use set keyword to create setter)
+3. Write getter method to get the value of the private variable (Use get keyword to get value of private variable)
+
+eg :
+
+class test{
+#firstname;
+constructor(fname){
+this.#firstname=fname
+}
+set Name(fname){
+this.#firstname=fname
+}
+get Name(){
+return this.#firstname
+}
+}
+let ob=new test("abc")
+c.l(`Hello ${ob.Name}`)
+ob.Name="xyz"
+c.l(`Hello ${ob.Name}`)
+//cannot access private variable outside of class
+//c.l(`Hello ${ob.#firstname}`)
+
+
+Types of variables in class
+
+There are 2 types of variables present in the class
+1.instance variable
+2.static variable
+
+
+1.instance variable : instance variable belongs to object means each object has it's own copy of the instance variable. When we create multiple obj of class separate memory is allocated for each object or the instance variable. 
+We use 'this' keyword to access or modify instance variable.
+
+eg:
+class test{
+#firstname
+#lastname
+constructor(fname, lname){
+this.#firstname=fname
+this.#lastname=lname
+}
+show(){
+c.l(`first name${this.#firstname}`)
+c.l(`first name${this.#lastname}`)
+}
+}
+let ob1=new test("abc","xyz")
+let ob2=new test("pqr","qqq")
+ob1.show()
+ob2.show()
+
+
+	INSTANCE VARIABLE
+
+
+	ob1
+---------------------
+| #firstname:"abc"  |
+| #lastname:"xyz"   |
+|		    |
+|  		    |
+|		    |
+|		    |
+--------------------
+
+
+	ob2
+---------------------
+| #firstname:"pqr"  |
+| #lastname:"qqq"   |
+|		    |
+|                   | 
+| 		    |
+|		    |    
+--------------------
+
+
+2.static variable
+
+	we can declare static variable in js class. Static variables has following properties:
+1) It is declared using 'static' keyword.
+2) Only one copy of the static variable is present no matter how many objects of the class is created.
+3) static variable is accessed by class name only (We cannot use 'this' keyword to access static keyword.)
+
+static function :
+Properties
+1) It is declared using 'static' keyword 
+2) It is called by class name only (static method cannot be called by object)
+3) static method can access only static variable
+
+
+
+eg:
+
+class student{
+    #id
+    static i=0
+    constructor(sid){
+        this.#id=sid
+        student.i++
+    }
+    show(){
+        console.log(`ID: ${this.#id}`)
+        console.log(`Count is : ${student.i}`)
+
+    }
+}
+let s1=new student(10)
+let s2=new student(20)
+let s3=new student(30)
+s1.show()
+s2.show()
+s3.show()
+
+
+
+	static variable
+
+
+	s1
+---------------------
+| #id=10	    |
+|    		    |
+|		    |
+|  		    |
+|		    |
+|		    |
+--------------------
+
+
+	s2
+---------------------
+| #id=20	    |
+| 		    |
+|		    |
+|                   | 
+| 		    |
+|		    |    
+--------------------
+
+	ob1
+---------------------
+| #id=30	    |
+| 		    |
+|		    |
+|  		    |
+|		    |
+|		    |
+--------------------
+
+
+	ob2
+---------------------
+| i=0		    |
+| i=1		    |
+| i=2		    |
+| i=3                  | 
+| 		    |
+|		    |    
+--------------------
