@@ -389,7 +389,7 @@ s3.show()
 |		    |    
 --------------------
 
-	ob1
+	s3
 ---------------------
 | #id=30	    |
 | 		    |
@@ -400,12 +400,196 @@ s3.show()
 --------------------
 
 
-	ob2
+	i
 ---------------------
 | i=0		    |
 | i=1		    |
 | i=2		    |
-| i=3                  | 
+| i=3               | 
 | 		    |
 |		    |    
 --------------------
+
+
++] Inheritance
+
+
+
+Inheritance is a principle by which properties of one class can be used into another class . The main purpose of the inheritance is code reusability. In js we use extends keyword to create the inheritance.
+syntax:
+class b extends a
+
+eg:
+
+class A{
+    show(){
+        console.log("Hello world")
+    }
+}
+class B extends A{
+    disp(){
+        console.log("Hi")
+    }
+}
+let ob = new B()
+ob.show()
+ob.disp()
+
+NOte: In js multiple inheritance is not possible
+
+
+
+
+
+*) Constructor chaining
+	Always base class constructor executed first and then derived class constructor. In js we have to manually call base class constructor through derive class using super keyword. 
+
+eg:
+
+class A{
+    constructor(){
+        console.log("In A")
+    }
+}
+class B extends A{
+    constructor(){
+        super()
+        console.log("In b")
+    }
+}
+class C extends B{
+    constructor(){
+        super()
+        console.log("In C")
+    }
+}
+let ob = new C()
+
+O/P:
+
+In A 
+In B
+In C
+
+
+
+class A{
+    constructor(){
+	this.i=100
+        console.log("In A")
+    }
+}
+class B extends A{
+    constructor(){
+        super()
+	this.j=200
+        console.log("In b")
+    }
+	add(){
+	console.log(this.i+this.j)
+}
+}
+let ob = new B()
+ob.add()
+
+When parameterized construcors are used total number of variables required in base class that is A and total parameters required in class B are required to be passed
+
+class A{
+    constructor(x){
+	this.i=x
+        console.log("In A")
+    }
+}
+class B extends A{
+    constructor(a,b){
+        super(b)
+	this.j=a
+        console.log("In b")
+    }
+	add(){
+	console.log(this.i+this.j)
+}
+}
+let ob = new B(201,101)
+ob.add()
+
+---------------------------------------------------------------------------------------------------------------------
+
+*)Method overriding
+
+When base class and derived class has same method name with same parameters then it is called method overriding.
+
+eg:
+
+//Method overridding
+class A{
+    sayHello(){
+        console.log("In A")
+    }
+}
+class B extends A{
+    sayHello(){
+        console.log("In B")
+    }
+	
+}
+
+let ob = new B()
+ob.sayHello()
+o/p:
+In B
+
+----------------------------------------------------------------------------------------------------------------------
+
+In js Method overloading is not possible
+
+----------------------------------------------------------------------------------------------------------------------
++] Mixing
+
+	Mixing Multiple inheritance is not present in J.S. because it can inherit only one class. Mixing is a class containing methods that can be used by other classes without need of inheritance. This is simply copying one function from one class to another class. We can use object.assign method to assign the existing method to the class.
+
+
+let mix1={
+show(){
+console.log("In MIX1")
+}
+}
+let mix2={
+disp(){
+console.log("In MIX2")
+}
+}
+class A{
+constructor(){
+console.log("Constructor of A class called!!")
+}
+sayHello(){
+console.log("In A class")
+}
+}
+console.log(typeof(A))
+console.log(A.prototype.sayHello)
+object.assign(A.prototype,mix1)
+object.assign(A.prototype,mix2)
+let ob=new A()
+ob.sayHello()
+
+
+----------------------------------------------------------------------------------------------------------------------
+
++] Computed Name
+	We can use the strings for function name
+
+eg: 
+
+//Computed name
+class A{
+    ['say'+'Hello'](){
+        console.log("Hello world")
+    }
+}
+let ob=new A()
+ob.sayHello()
+
+----------------------------------------------------------------------------------------------------------------------
+

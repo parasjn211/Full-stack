@@ -1,0 +1,39 @@
+React notes : 
+There  are two types of forms:
+
+1) Controlled form: here useStae is used 
+2) Uncontrolled form: here useRef is used
+
+
+Assignment:
+
+
+create a form containing
+name 
+phone
+email
+gender
+known languages
+submit
+along with it show the output in table format like 
+your count is : 
+
+Difference between useState and useRef
+1)When we call useStae it will return array, which contain variable name and function name
+1)When we call useRef we get the object which contain current property to store the value
+
+2)When we change the value of variable present in useState, component is rerender
+2)When we change the value of useRef object it will not rerender component
+
+3)useStae contain immutable data
+3)useRef contain mutable data
+
+
+Hookes
+
+*) useMemo: useMemo hooke is used to buffer result of long calculation so that on every reload of component these long calculation is not executed. While calling usememo function we have to pass two parameters 
+1. arrow function which contain code for long calculations
+2. array of variables to indicate only called usememo when these variable changes 
+
+it will return the result of long calculation which we can use in our application to display data
+
