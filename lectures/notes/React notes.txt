@@ -37,3 +37,30 @@ Hookes
 
 it will return the result of long calculation which we can use in our application to display data
 
+*) use Effect: Generally components are pure function, pure function means which perform only one task, but some times we want to perform the sideeffect operations such as getting data from servers or connecting to external server
+
+if we write such a code in the component it will execute on every rerender of component. if we want to get data only one time or depending on condition, then we have to use useEffect hooke 
+
+Syntax: useEffect(<function>, <dependency>)
+
+
+condition 
+1) No dependency pass
+	useEffect(()=>{
+	//Runs on every render
+}
+
+2) An empty array
+	useEffect(()=>{
+	//Runs on the first render
+},[])
+
+3) Pass properties on 
+	useEffect(()=>{
+	//Runs on the first render
+	// aned anyt tine any dependency value changes 
+},[prop,, state]);
+
+
+
+
